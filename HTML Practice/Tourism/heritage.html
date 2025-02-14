@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Heritage Sites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images-ng.pixai.art/images/orig/cbf4a90f-71b4-468b-8b8e-75aeef3a8246') no-repeat center center fixed;
+    background-size: cover;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .heritage-item {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .heritage-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .heritage-item h2 {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            padding: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Heritage Sites in Tokyo</h1>
+        <div class="heritage-list">
+            <div class="heritage-item">
+                <a href="heritage1.html"><img src="https://www.datocms-assets.com/101439/1726553255-itsukushima-shrine.webp?auto=format&crop=focalpoint&fit=crop&fp-x=0.46&fp-y=0.49&h=800&w=1200" alt="Heritage Site 1"></a>
+                <h2>Itsukushima Shrine</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage2.html"><img src="https://dr7f10k1l6bnm.cloudfront.net/wp-content/uploads/2024/11/meiji-jingu-shrine.jpg" alt="Heritage Site 2"></a>
+                <h2>Meiji Jingu</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage3.html"><img src="https://a1.cdn.japantravel.com/photo/poi-5-214199/768x512!/tokyo-sensoji-temple-214199.jpg" alt="Heritage Site 3"></a>
+                <h2>Sensō-ji</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage4.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Shinjuku_Gyoen_National_Garden_-_sakura_3.JPG/1024px-Shinjuku_Gyoen_National_Garden_-_sakura_3.JPG" alt="Heritage Site 4"></a>
+                <h2>Shinjuku Gyoen National Garden</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage5.html"><img src="https://media.timeout.com/images/105946468/750/562/image.webp" alt="Heritage Site 5"></a>
+                <h2>Shibuya Scramble Crossing</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage6.html"><img src="https://res.klook.com/image/upload/c_fill,w_1160,h_474/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/ehjuprgxxxwbc3zt1bnh.webp" alt="Heritage Site 6"></a>
+                <h2>Tokyo Skytree</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage7.html"><img src="https://sspark.ai/cfimages?u1=0jsz9l8PKcSWAKQSt1M8yRZIMQosKMS60vawjAiMvP%2B4RQjykBdu1H4htOwVZwQ7XI99R%2BZYYWIYoUTl01f82UFg7cx7qK%2FrI8wGGcn70aTkUExnohr6zdR8aw%3D%3D&u2=Lix1kfLVN2Bf93VM&width=1024" alt="Heritage Site 7"></a>
+                <h2>Tokyo Tower</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage8.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/800px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png" alt="Heritage Site 8"></a>
+                <h2>Akihabara</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage9.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ginza-WAKO_at_night.jpg/800px-Ginza-WAKO_at_night.jpg" alt="Heritage Site 9"></a>
+                <h2>Ginza</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage10.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1024px-Tokyo_National_Museum%2C_Honkan_2010.jpg" alt="Heritage Site 10"></a>
+                <h2>Tokyo National Museum</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage11.html"><img src="https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2014/11/ueno-cherry-blossom-GettyImages-1996449432-1280x600.jpeg" alt="Heritage Site 11"></a>
+                <h2>Ueno Park</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage12.html"><img src="https://i0.wp.com/yumetwinsblog.wpcomstaging.com/wp-content/uploads/2023/07/harajuku-transformed-thumbnail.png?fit=1024%2C683&ssl=1" alt="Heritage Site 12"></a>
+                <h2>Harajuku</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage13.html"><img src="https://www.japanbyweb.com/wp-content/uploads/2016/11/hamarikyu_2.jpg" alt="Heritage Site 13"></a>
+                <h2>Hama-rikyu Gardens</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage14.html"><img src="https://pohcdn.com/guide/sites/default/files/styles/paragraph__text_with_image___twi_image/public/2022-09/imperial-palace-2_optimized_0.jpg" alt="Heritage Site 14"></a>
+                <h2>Imperial Palace</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage15.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG/800px-Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG" alt="Heritage Site 15"></a>
+                <h2>Kinkaku-ji</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage16.html"><img src="https://tokyo-park.net/wp-content/uploads/Zoshigaya-kishimojin-Temple-1-1024x683.jpg" alt="Heritage Site 16"></a>
+                <h2>Kishimojin Temple</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage17.html"><img src="https://rimage.gnst.jp/livejapan.com/public/img/spot/lj/00/01/lj0001941/lj0001941_56fc6ff81ed77_main.jpg?20230604051137&q=80&rw=616" alt="Heritage Site 17"></a>
+                <h2>Kiyomizu Kannon-dō Temple</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage18.html"><img src="https://cdn.shopify.com/s/files/1/0602/2617/5224/files/shutterstock_2017501172_480x480.jpg?v=1724997203" alt="Heritage Site 18"></a>
+                <h2>Takeshita Street</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage19.html"><img src="https://www.kanpai-japan.com/sites/default/files/uploads/2020/08/tokyo-teamlab-planets-15.jpg" alt="Heritage Site 19"></a>
+                <h2>teamLab Planets TOKYO DMM</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage20.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Yasukuni_Shrine_201005.jpg/800px-Yasukuni_Shrine_201005.jpg" alt="Heritage Site 20"></a>
+                <h2>Yasukuni-jinja Shrine</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage21.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Fountain_Yoyogipark.JPG/1024px-Fountain_Yoyogipark.JPG" alt="Heritage Site 21"></a>
+                <h2>Yoyogi Park</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage22.html"><img src="https://www.japan-guide.com/g18/740/3070_01.jpg" alt="Heritage Site 22"></a>
+                <h2>Edo-Tokyo Museum</h2>
+            </div>
+            <div class="heritage-item">
+                <a href="heritage23.html"><img src="https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2024-05/things-to-do-kabukicho_8.jpg?itok=ZaD-iB5G" alt="Heritage Site 23"></a>
+                <h2>Kabukicho</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

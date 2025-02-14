@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head><title><marquee><font style="font-family:'Agency FB'; text-color:'brown'">What to do</title></font></marquee></head>
+<body bgcolor="coral">
+<p>Hello there, Reader! Your friendly neighbourhood Writer here! <br/>Nothing  much to report here. Just the usual stuff.</p>
+</body>
+</html>

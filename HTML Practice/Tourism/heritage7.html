@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Tower</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://architectureprizecom.s3-us-west-2.amazonaws.com/uploads/91805/22-4483-18/medium/22a85bdbf4b2e29acbf40411d5360a82.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-details {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .heritage-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-details p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 align=center>Tokyo Tower</h1>
+        <div class="heritage-details">
+            <img src="https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/6/2016/06/Tokyo-Tower-2-1024x683.jpg" alt="Tokyo Tower">
+            <p>
+                Tokyo Tower, one of Japan's most iconic landmarks, stands tall at 333 meters in the heart of Tokyo, offering a stunning view of the sprawling city below. Originally completed in 1958, it was inspired by the Eiffel Tower in Paris and was built to serve as a television and radio broadcast tower. Over the years, Tokyo Tower has become more than just a broadcast station; it is now a symbol of Japan's modernization and a major tourist attraction, drawing visitors from around the world for its breathtaking views and historical significance.
+</p>
+<p>
+The structure is composed of a steel frame and is painted in white and international orange to ensure visibility for aircraft. At night, the tower is illuminated in a beautiful display of lights, making it a striking feature of Tokyo's skyline. The upper observation deck, at 250 meters, offers a panoramic view of Tokyo, including famous landmarks like the Rainbow Bridge, the Tokyo Skytree, and, on clear days, Mount Fuji in the distance. Visitors can enjoy the scenic beauty of the city both during the day and night, with each experience offering a unique perspective.
+</p>
+<p>
+Tokyo Tower also houses various attractions, including restaurants, museums, and an aquarium. The FootTown building, located directly beneath the tower, offers a variety of shops, eateries, and interactive exhibits, making it an ideal destination for families and tourists of all ages. The tower's history is also preserved in exhibits that showcase the evolution of the tower, from its original purpose as a broadcast hub to its current status as a must-see tourist spot.
+</p>
+<p>
+In addition to its role as a tourist destination, Tokyo Tower is a vital part of the city's infrastructure, continuing to serve as a television and radio transmission tower. Its iconic status and historical significance have cemented its place as a cultural symbol of Tokyo, blending modernity with tradition and offering visitors an unforgettable experience of Japan's capital. Whether you're visiting for the view, the attractions, or the history, Tokyo Tower remains one of the most unforgettable places to visit in Tokyo.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

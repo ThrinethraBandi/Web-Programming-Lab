@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<html>
+<head><title>Form Submitted</title></head>
+<body bgcolor=silver style="font-family:agency fb">Form has been successfully submitted !!</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in Tokyo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e88fdcdd-863a-4c71-b38e-a2850abec330/dih49lv-1b006a07-2cab-45f9-9ef6-d53713c06b5c.jpg/v1/fill/w_1280,h_732,q_75,strp/futuristic_tokyo_cityscape_at_night_by_ai_art_by_design_dih49lv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4OGZkY2RkLTg2M2EtNGM3MS1iMzhlLWEyODUwYWJlYzMzMFwvZGloNDlsdi0xYjAwNmEwNy0yY2FiLTQ1ZjktOWVmNi1kNTM3MTNjMDZiNWMuanBnIiwiaGVpZ2h0IjoiPD03MzIiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9lODhmZGNkZC04NjNhLTRjNzEtYjM4ZS1hMjg1MGFiZWMzMzBcL2FpLWFydC1ieS1kZXNpZ24tNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.YQcTsomjrybkLzcx_MlBICz7jxhJBbBoUoalzWJ-Qb0') no-repeat center center/cover;
+            background-attachment: fixed;
+            color: #f0f0f0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            animation: slideIn 0.5s ease-out; /* Navigation bar slide-in effect */
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            opacity: 0; /* Initially hidden for animation */
+            animation: fadeInLinks 1s ease-out forwards;
+        }
+
+        nav a:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        nav a:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        nav a:nth-child(3) {
+            animation-delay: 0.5s;
+        }
+
+        nav a:nth-child(4) {
+            animation-delay: 0.7s;
+        }
+
+        @keyframes fadeInLinks {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .hero {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-card {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #ff9a76;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            margin: 10px 0;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            color: white;
+            background: linear-gradient(90deg, #ff6f61, #ff9a76);
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #e5584b, #ff6f61);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-card">
+            <img src="https://img.freepik.com/premium-vector/tokyo-logo_926199-3754137.jpg?w=740" alt="City Logo">
+            <h1>Welcome to Tokyo</h1>
+            <p>Discover the rich heritage, vibrant nightlife, and futuristic cityscapes of Tokyo. Immerse yourself in iconic landmarks, book luxurious stays, and create unforgettable memories.</p>
+            <a href="heritage.html"><button class="btn">Explore More</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

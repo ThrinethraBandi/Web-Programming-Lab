@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibuya Scramble Crossing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://plus.unsplash.com/premium_photo-1661902398022-762e88ff3f82?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-details {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .heritage-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-details p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 align=center>Shibuya Scramble Crossing</h1>
+        <div class="heritage-details">
+            <img src="https://dr7f10k1l6bnm.cloudfront.net/wp-content/uploads/2024/11/shibuya-crossing-1.jpg" alt="Shibuya Scramble Crossing">
+            <p>
+                Shibuya Crossing, located in the heart of Shibuya, Tokyo, is one of the world’s most famous pedestrian intersections, known for its sheer volume of foot traffic and vibrant urban atmosphere. This busy crossing is a focal point for both locals and tourists, offering a unique glimpse into Tokyo’s fast-paced lifestyle. Surrounded by towering skyscrapers, neon signs, and large video screens, the crossing is a dynamic hub of activity, where waves of people cross in every direction, often all at once, creating an iconic spectacle. It has become a symbol of Tokyo’s modern, bustling energy and a must-see for visitors to the city.
+</p>
+<p>
+The crossing itself is situated in front of Shibuya Station, one of the busiest transportation hubs in Tokyo, making it a central point for commuters, shoppers, and tourists alike. The area is surrounded by shopping malls, restaurants, cafes, and entertainment venues, making it an exciting spot to people-watch. When the traffic lights turn red, hundreds, sometimes thousands, of pedestrians flood the intersection from all directions, creating a mesmerizing sight that has become a hallmark of Tokyo’s urban landscape.
+</p>
+<p>
+Shibuya Crossing's popularity has also made it a cultural icon, frequently featured in films, television shows, and advertisements. Its chaotic yet organized flow of pedestrian traffic has come to represent the city’s vibrancy and efficiency. The crossing is particularly stunning at night when the neon lights illuminate the streets, adding to the electric energy of the area. It has become a symbol of the intersection of modernity, technology, and tradition in Tokyo, with people from all walks of life coming together in this urban spectacle.
+</p>
+<p>
+Beyond its visual appeal, Shibuya Crossing holds significant cultural importance. The area surrounding it is a hub for youth culture, fashion, and music, with Shibuya being a center for trends and creativity. The crossing is often seen as a place where diverse groups of people come together, reflecting the diversity and inclusivity of modern Tokyo. It’s not just a busy intersection but a place where the pulse of the city can be felt, embodying the essence of Tokyo’s dynamic and ever-changing character.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

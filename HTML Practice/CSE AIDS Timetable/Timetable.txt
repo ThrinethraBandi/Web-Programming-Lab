@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title>6x10 Table with Sample Text</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Sample text 1</td>
+            <td>Sample text 2</td>
+            <td>Sample text 3</td>
+            <td>Sample text 4</td>
+            <td>Sample text 5</td>
+            <td>Sample text 6</td>
+            <td>Sample text 7</td>
+            <td>Sample text 8</td>
+            <td>Sample text 9</td>
+            <td>Sample text 10</td>
+        </tr>
+        <tr>
+            <td>Sample text 11</td>
+            <td>Sample text 12</td>
+            <td>Sample text 13</td>
+            <td>Sample text 14</td>
+            <td>Sample text 15</td>
+            <td>Sample text 16</td>
+            <td>Sample text 17</td>
+            <td>Sample text 18</td>
+            <td>Sample text 19</td>
+            <td>Sample text 20</td>
+        </tr>
+        <tr>
+            <td>Sample text 21</td>
+            <td>Sample text 22</td>
+            <td>Sample text 23</td>
+            <td>Sample text 24</td>
+            <td>Sample text 25</td>
+            <td>Sample text 26</td>
+            <td>Sample text 27</td>
+            <td>Sample text 28</td>
+            <td>Sample text 29</td>
+            <td>Sample text 30</td>
+        </tr>
+        <tr>
+            <td>Sample text 31</td>
+            <td>Sample text 32</td>
+            <td>Sample text 33</td>
+            <td>Sample text 34</td>
+            <td>Sample text 35</td>
+            <td>Sample text 36</td>
+            <td>Sample text 37</td>
+            <td>Sample text 38</td>
+            <td>Sample text 39</td>
+            <td>Sample text 40</td>
+        </tr>
+        <tr>
+            <td>Sample text 41</td>
+            <td>Sample text 42</td>
+            <td>Sample text 43</td>
+            <td>Sample text 44</td>
+            <td>Sample text 45</td>
+            <td>Sample text 46</td>
+            <td>Sample text 47</td>
+            <td>Sample text 48</td>
+            <td>Sample text 49</td>
+            <td>Sample text 50</td>
+        </tr>
+        <tr>
+            <td>Sample text 51</td>
+            <td>Sample text 52</td>
+            <td>Sample text 53</td>
+            <td>Sample text 54</td>
+            <td>Sample text 55</td>
+            <td>Sample text 56</td>
+            <td>Sample text 57</td>
+            <td>Sample text 58</td>
+            <td>Sample text 59</td>
+            <td>Sample text 60</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itsukushima Shrine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://japanupclose.web-japan.org/files/100441840.jpeg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-details {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .heritage-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-details p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 align=center>Itsukushima Shrine</h1>
+        <div class="heritage-details">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/82/7a.jpg" alt="Itsukushima Shrine">
+            <p>
+                Itsukushima Shrine, located on Miyajima Island in Hiroshima Bay, is one of Japan’s most iconic and spiritual landmarks. Renowned for its "floating" torii gate, which appears to rise from the sea during high tide, the shrine is a UNESCO World Heritage Site and an enduring symbol of Japan's deep connection to nature and spirituality. The shrine's origins date back to the 6th century, though the current structure was built in the 12th century, during the Heian period. Itsukushima Shrine is dedicated to the three Shinto deities of sea and storms: Ichikishima-hime, Tagorihime, and Ikikishima-hime, who are believed to protect sailors and those traveling by sea.
+</p>
+<p>
+The shrine’s main hall is built over the water, supported by stilts, and is connected to other buildings by long, covered walkways. This unique architectural style creates a stunning visual effect, especially when viewed from the shore. At low tide, visitors can walk up to the torii gate, while at high tide, the gate appears to be suspended above the water, creating a breathtaking scene. The shrine itself is surrounded by lush forests and mountains, adding to its serene and spiritual atmosphere.
+</p>
+<p>
+Visitors to Itsukushima Shrine can experience the tranquility of the area, with the sound of waves lapping against the shrine's stilts and the gentle rustle of trees in the wind. The nearby Mount Misen offers hiking trails with panoramic views of the Seto Inland Sea, and the island itself is known for its friendly population of free-roaming deer, which have been regarded as messengers of the gods in Shinto belief.
+</p>
+<p>
+A visit to Itsukushima Shrine is a journey into Japan’s spiritual heritage, where nature, architecture, and religious tradition come together in harmony.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

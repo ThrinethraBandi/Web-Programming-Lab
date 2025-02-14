@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        /* General styles for body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.9), rgba(34, 34, 34, 1));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        /* Calculator Container */
+        .calculator {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 25px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(128, 0, 128, 0.2);
+            backdrop-filter: blur(10px);
+            transform: scale(1);
+            transition: all 0.3s ease;
+        }
+
+        .calculator:hover {
+            transform: scale(1.05);
+        }
+
+        /* Display area of the calculator */
+        #display {
+            width: 100%;
+            padding: 20px;
+            font-size: 5vw; /* Scalable font size */
+            text-align: right;
+            margin-bottom: 20px;
+            background-color: rgba(128, 0, 128, 0.2);
+            color: #800080;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(128, 0, 128, 0.2);
+            outline: none;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Button grid layout */
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        /* Individual buttons styling */
+        .button {
+            padding: 20px;
+            font-size: 1.8rem;
+            background-color: rgba(128, 0, 128, 0.3);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(128, 0, 128, 0.3);
+        }
+
+        /* Hover effect for buttons */
+        .button:hover {
+            background-color: rgba(128, 0, 128, 0.5);
+            box-shadow: 0 6px 20px rgba(128, 0, 128, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* Active state for buttons */
+        .button:active {
+            background-color: rgba(128, 0, 128, 0.7);
+            transform: translateY(3px);
+        }
+
+        /* Specific button styles for 'C' and '=' */
+        .button:nth-child(16) {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+
+        .button:nth-child(16):hover {
+            background-color: rgba(255, 0, 0, 0.7);
+        }
+
+        .button:nth-child(15) {
+            background-color: rgba(0, 255, 0, 0.5);
+        }
+
+        .button:nth-child(15):hover {
+            background-color: rgba(0, 255, 0, 0.7);
+        }
+
+        /* Operation buttons - colors */
+        .button:nth-child(4),
+        .button:nth-child(8),
+        .button:nth-child(12),
+        .button:nth-child(16) {
+            background-color: rgba(0, 153, 255, 0.6); /* Blue for /, *, - and + */
+        }
+
+        .button:nth-child(4):hover,
+        .button:nth-child(8):hover,
+        .button:nth-child(12):hover,
+        .button:nth-child(16):hover {
+            background-color: rgba(0, 153, 255, 0.8);
+        }
+
+        /* Dark red color for the backspace button */
+        .button:nth-child(17) {
+            background-color: rgba(139, 0, 0, 0.6); /* Dark Red */
+        }
+
+        .button:nth-child(17):hover {
+            background-color: rgba(139, 0, 0, 0.8); /* Dark Red on hover */
+        }
+
+        /* Keyframe for the display */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation for display */
+        #display {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Styling for button groups */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .row button {
+            width: 22%;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 400px) {
+            .calculator {
+                width: 90%;
+                padding: 15px;
+            }
+
+            #display {
+                font-size: 8vw;
+            }
+
+            .button {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <!-- Display screen -->
+        <input type="text" id="display" disabled />
+
+        <!-- Button grid -->
+        <div class="buttons">
+            <button class="button" onclick="appendToDisplay('7')">7</button>
+            <button class="button" onclick="appendToDisplay('8')">8</button>
+            <button class="button" onclick="appendToDisplay('9')">9</button>
+            <button class="button" onclick="appendToDisplay('/')">/</button>
+
+            <button class="button" onclick="appendToDisplay('4')">4</button>
+            <button class="button" onclick="appendToDisplay('5')">5</button>
+            <button class="button" onclick="appendToDisplay('6')">6</button>
+            <button class="button" onclick="appendToDisplay('*')">*</button>
+
+            <button class="button" onclick="appendToDisplay('1')">1</button>
+            <button class="button" onclick="appendToDisplay('2')">2</button>
+            <button class="button" onclick="appendToDisplay('3')">3</button>
+            <button class="button" onclick="appendToDisplay('-')">-</button>
+
+            <button class="button" onclick="appendToDisplay('0')">0</button>
+            <button class="button" onclick="appendToDisplay('.')">.</button>
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="appendToDisplay('+')">+</button>
+
+            <!-- Backspace button -->
+            <button class="button" onclick="backspace()">&#9003;</button>
+
+            <button class="button" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

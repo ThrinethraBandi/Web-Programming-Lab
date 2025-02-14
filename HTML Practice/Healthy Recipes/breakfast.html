@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Recipes</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img.freepik.com/premium-photo/doll-cooking-kitchen-with-red-hat_916191-434321.jpg?w=826");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(90deg, rgba(40,167,69,0.8), rgba(72,201,176,0.8));
+            color: #fff;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-size: 2.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(33,136,56,0.8);
+            padding: 0.8rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        /* Container Styling */
+        .container {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 1000px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        /* Recipe Card Styling */
+        .recipe {
+            background: rgba(255, 255, 255, 0.9);
+            margin: 1rem auto;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .recipe:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .recipe h3 {
+            color: #28a745;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe a {
+            text-decoration: none;
+            color: #155724;
+            font-weight: bold;
+        }
+
+        .recipe p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Smooth animations for the page */
+        * {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Breakfast Recipes</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lunch.html">Lunch</a>
+        <a href="dinner.html">Dinner</a>
+    </nav>
+    <div class="container">
+        <div class="recipe">
+            <h3><a href="recipe1.html">Oats Upma</a></h3>
+            <p>A fiber-rich and nutritious twist on the traditional South Indian upma.</p>
+        </div>
+        <div class="recipe">
+            <h3><a href="recipe2.html">Ragi (Finger Millet) Dosa</a></h3>
+            <p>A calcium-rich, gluten-free alternative to traditional dosas.</p>
+        </div>
+        <div class="recipe">
+            <h3><a href="recipe3.html">Vegetable Moong Dal Idli</a></h3>
+            <p>A high-protein and low-carb alternative to traditional idlis.</p>
+        </div>
+    </div>
+</body>
+</html>
